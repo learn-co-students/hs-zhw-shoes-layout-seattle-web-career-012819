@@ -24,4 +24,33 @@
 
 /* Positioning Classes */
 
+.grid-container {
+  display: grid;
+  width: 100%;
+  grid-template-areas:  "feat feat arch"
+                        "feat feat arch"
+                        "deal deal deal";
+  grid-template-rows: 33%, 33%, 33%;
+  grid-template-columns: 33%, 33%, 33%;
+  grid-gap: 20px;
+}
 
+#shoe-featured {
+  grid-area: feat;
+}
+
+#shoe-archive {
+  grid-area: arch;
+}
+
+#shoe-deals {
+  grid-area: deal;
+  columns: 3 auto;
+}
+
+#details {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  columns: 3 auto;
+}
